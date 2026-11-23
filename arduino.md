@@ -61,11 +61,11 @@ void loop() {
     tempData = (double)(((data_high & 0x007F) << 8) + data_low);  
     tempData = (tempData * tempFactor) - 0.01;  
 
-    float celcius = tempData - 273.15;  
-    float fahrenheit = (celcius * 1.8) + 32;  
+    float celsius = tempData - 273.15;  
+    float fahrenheit = (celsius * 1.8) + 32;  
 
-    Serial.print("Celcius: ");  
-    Serial.println(celcius);  
+    Serial.print("Celsius: ");  
+    Serial.println(celsius);  
     Serial.print("Fahrenheit: ");  
     Serial.println(fahrenheit);  
 
